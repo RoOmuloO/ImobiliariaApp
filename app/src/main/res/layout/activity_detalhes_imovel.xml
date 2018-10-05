@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalhesImovelActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgViewDetalhesImovelFoto"
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDetalhesImovelNome" />
+
+                <TextView
+                    android:id="@+id/txtViewDetalhesImovelNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDetalhesImovelPreco" />
+
+                <TextView
+                    android:id="@+id/txtViewDetalhesImovelPreco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvDetalhesImovelQtdeQuartos" />
+
+                <TextView
+                    android:id="@+id/txtViewDetalhesImovelQtdeQuartos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição: " />
+
+                <TextView
+                    android:id="@+id/txtViewDetalhesImovelDescricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bairro: " />
+
+                <TextView
+                    android:id="@+id/txtViewDetalhesImovelBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Imóvel:" />
+
+                <TextView
+                    android:id="@+id/txtViewDetalhesImovelTipoImovel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchDetalhesImovelVendido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vendido? " />
+
+            <Button
+                android:id="@+id/btnDetalhesImovelSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vender Imóvel" />
+
+            <Button
+                android:id="@+id/btnDetalhesImovelRecolocarVenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recolocar a Venda" />
+
+            <Button
+                android:id="@+id/btnDetalhesImovelVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voltar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
